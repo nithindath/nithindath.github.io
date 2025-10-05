@@ -1,36 +1,57 @@
-# Resume GitHub Pages Site (Template)
+# Nithin Dath PP
 
-This repository contains a minimal single-page resume ready to be published with GitHub Pages.
+💻 **Senior IT Engineer | Network & Infrastructure | Retail IT Operations**  
 
-## What’s inside
-- `index.html` — the resume page (edit to add your details).
-- `styles.css` — styles for the page.
-- `.nojekyll` — ensures GitHub Pages serves files from the root.
-- `resume.pdf` — optional (not included) — add your PDF if you want a download link.
-
-## Quick steps to publish on GitHub Pages
-
-1. Create a new repository on GitHub (e.g. `yourname.github.io`) or any repo name.
-2. Clone it locally:
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
-   cd YOUR-REPO
-   ```
-3. Copy these files into the repo (or upload through GitHub web UI).
-4. Commit and push:
-   ```bash
-   git add .
-   git commit -m "Add resume site"
-   git push origin main
-   ```
-5. Enable GitHub Pages:
-   - If the repo name is `yourname.github.io`, Pages will publish from the `main` branch automatically at `https://yourname.github.io/`.
-   - Otherwise go to **Settings → Pages** and choose the branch (main) and folder (`/ (root)` or `docs/`) and save. It will provide the URL that looks like `https://your-username.github.io/your-repo/`.
-6. (Optional) Add a PDF `resume.pdf` to the repo root to make the download link work.
-
-## Custom domain
-If you want to use a custom domain, add a `CNAME` file with your domain and configure DNS.
+📧 [Email](mailto:nithindath@gmail.com) • 🐙 [GitHub](https://github.com/nithindath) • 🔗 [LinkedIn](https://linkedin.com/in/nithindath)
 
 ---
 
-Edit `index.html` to replace placeholders (`Your Name`, contact links, experience, skills). If you'd like, I can fill the template with your real resume details — paste them here and I’ll update the HTML for you.
+## 🧠 About
+
+I am an experienced IT engineer specializing in network infrastructure, router/switch management, and retail IT operations. Passionate about solving network issues and ensuring seamless IT support across distributed systems.
+
+---
+
+## 🛠️ Skills
+
+- Cisco Routers (2900, 1921, 4331, 4321)  
+- Switches (2960, 3750, 4500)  
+- Juniper Devices  
+- Wireless (Cisco Aironet, WLC 5508/8840)  
+- Routing & VLAN Configuration  
+- Firewall & ACL Management  
+- POS / RFID / PDA Setup  
+
+---
+
+## 📌 Pinned Projects
+
+### 🔧 Network Automation Toolkit  
+Scripts and templates for automating Cisco router configurations and backups.  
+
+### 📊 Retail IT Monitor  
+Dashboard project to monitor connectivity and device status across retail outlets.  
+
+### 🎓 CCNA Practice Labs  
+Collection of Packet Tracer and GNS3 lab files used for CCNA preparation.  
+
+---
+
+## 💼 Experience
+
+**Senior IT Engineer — Reliance Retail**  
+Responsible for managing routers, switches, and wireless infrastructure across Kerala retail outlets. Provided end-to-end networking support and device configurations.  
+
+**Junior System Administrator — Tech27 Systems Pvt Ltd**  
+Handled system administration, server maintenance, and troubleshooting network issues.  
+
+---
+
+## 🎓 Education
+
+- B.E. in Electronics & Communication — Dr. Pauls Engineering College, 2014  
+- Diploma in Hardware & Networking (CCNA, MCSA, Networking, Hardware)  
+
+---
+
+© 2025 **Nithin Dath PP** — Hosted on GitHub Pages
