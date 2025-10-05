@@ -3,193 +3,186 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nithin Dath PP — CV</title>
+  <title>Nithin Dath PP | GitHub Profile Style</title>
   <style>
-    :root{
-      --accent:#0b6fb3;
-      --muted:#666;
-      --bg:#f7f9fb;
-      --card:#ffffff;
-      --maxw:900px;
-      font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f6f8fa;
+      color: #24292f;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:var(--bg);color:#111;}
-    .wrap{
-      max-width:var(--maxw);
-      margin:28px auto;
-      padding:20px;
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    .card{
-      display:flex;
-      gap:24px;
-      background:var(--card);
-      border-radius:12px;
-      padding:26px;
-      box-shadow:0 6px 20px rgba(12,20,30,0.06);
+    header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 40px;
     }
-    /* left column */
-    .aside{
-      width:280px;
-      flex-shrink:0;
-      padding-right:12px;
-      border-right:1px solid #eef2f5;
+    .avatar {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      border: 4px solid #fff;
+      box-shadow: 0 0 0 1px rgba(27,31,35,0.15);
     }
-    .photo{
-      width:120px;height:120px;border-radius:12px;overflow:hidden;
-      margin:0 auto 14px;border:2px solid #e6eef6;
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    .photo img{width:100%;height:100%;object-fit:cover;display:block}
-    h1{font-size:22px;margin:4px 0 6px}
-    .title{font-size:13px;color:var(--muted);margin-bottom:14px}
-    .contact{font-size:14px;line-height:1.6;color:#222}
-    .contact a{color:var(--accent);text-decoration:none}
-    .section-title{
-      font-size:13px;
-      color:var(--muted);
-      margin:18px 0 8px;
-      letter-spacing:0.6px;
+    .info h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 600;
     }
-    .pill{display:inline-block;background:#eef7ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-size:13px;margin:4px 6px 6px 0}
-    .list{font-size:14px;color:#1b1b1b;margin:0;padding-left:14px}
-    .list li{margin:6px 0}
-    /* main column */
-    .main{flex:1;padding-left:18px}
-    .headline{
-      display:flex;justify-content:space-between;align-items:flex-start;gap:12px;
+    .info p {
+      margin: 6px 0 12px;
+      color: #57606a;
+      font-size: 15px;
     }
-    .summary{color:#222;margin-top:6px;line-height:1.55}
-    .job{
-      margin:12px 0 16px;
-      padding-bottom:12px;
-      border-bottom:1px dashed #eef3f6;
+    .links a {
+      color: #0969da;
+      text-decoration: none;
+      margin-right: 16px;
+      font-size: 14px;
     }
-    .job h3{margin:0;font-size:15px}
-    .job .meta{font-size:13px;color:var(--muted);margin:6px 0}
-    .job ul{margin:8px 0 0;padding-left:18px}
-    .skills-grid{display:flex;flex-wrap:wrap;gap:8px}
-    .skill{background:#f1f7fb;padding:8px 10px;border-radius:8px;font-size:13px;color:#1a1a1a}
-    footer{font-size:13px;color:var(--muted);margin-top:18px}
-    /* responsive */
-    @media (max-width:760px){
-      .card{flex-direction:column}
-      .aside{width:100%;border-right:none;border-bottom:1px solid #eef2f5;padding-bottom:18px}
-      .main{padding-left:0}
+    .links a:hover { text-decoration: underline; }
+
+    .section {
+      margin-bottom: 36px;
+    }
+    .section h2 {
+      font-size: 20px;
+      border-bottom: 1px solid #d0d7de;
+      padding-bottom: 6px;
+      margin-bottom: 18px;
+    }
+
+    .pinned-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+    .repo-card {
+      border: 1px solid #d0d7de;
+      border-radius: 6px;
+      background: #fff;
+      padding: 16px;
+      transition: box-shadow 0.2s ease;
+    }
+    .repo-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .repo-card h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      color: #0969da;
+    }
+    .repo-card p {
+      margin: 0;
+      color: #57606a;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      list-style: none;
+    }
+    .skills li {
+      background: #eaeef2;
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    footer {
+      text-align: center;
+      color: #8b949e;
+      font-size: 13px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card" role="article" aria-label="Resume — Nithin Dath PP">
-      <aside class="aside" aria-labelledby="name">
-        <div class="photo" title="Replace photo.jpg with your photo">
-          <img src="photo.jpg" alt="Nithin Dath PP photo (replace with your file)" />
+  <div class="container">
+    <header>
+      <div class="avatar">
+        <img src="photo.jpg" alt="Nithin Dath PP">
+      </div>
+      <div class="info">
+        <h1>Nithin Dath PP</h1>
+        <p>💻 Senior IT Engineer | Network & Infrastructure | Retail IT Operations</p>
+        <div class="links">
+          <a href="mailto:nithindath@gmail.com">📧 Email</a>
+          <a href="https://github.com/nithindath" target="_blank">🐙 GitHub</a>
+          <a href="https://linkedin.com/in/nithindath" target="_blank">🔗 LinkedIn</a>
         </div>
-        <h1 id="name">Nithin Dath PP</h1>
-        <div class="title">Senior IT Engineer</div>
+      </div>
+    </header>
 
-        <div class="section-title">Contact</div>
-        <div class="contact">
-          <div>Email: <a href="mailto:nithindath@gmail.com">nithindath@gmail.com</a></div>
-          <div>Phone: <a href="tel:+918891616717">+91 88916 16717</a></div>
-          <div style="margin-top:6px">
-            Palliyali Puthukkulil House,<br />
-            Ponnempadam, Karad (P.O),<br />
-            Malappuram - 673632
-          </div>
+    <section class="section about">
+      <h2>About</h2>
+      <p>I am an experienced IT engineer specializing in network infrastructure, router/switch management, and retail IT operations. Passionate about solving network issues and ensuring seamless IT support across distributed systems.</p>
+    </section>
+
+    <section class="section skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Cisco Routers (2900, 1921, 4331, 4321)</li>
+        <li>Switches (2960, 3750, 4500)</li>
+        <li>Juniper Devices</li>
+        <li>Wireless (Cisco Aironet, WLC 5508/8840)</li>
+        <li>Routing & VLAN Configuration</li>
+        <li>Firewall & ACL Management</li>
+        <li>POS / RFID / PDA Setup</li>
+      </ul>
+    </section>
+
+    <section class="section pinned">
+      <h2>Pinned Projects</h2>
+      <div class="pinned-grid">
+        <div class="repo-card">
+          <h3>Network Automation Toolkit</h3>
+          <p>Scripts and templates for automating Cisco router configurations and backups.</p>
         </div>
-
-        <div class="section-title">Languages</div>
-        <div>
-          <span class="pill">Malayalam</span>
-          <span class="pill">Hindi</span>
-          <span class="pill">Tamil</span>
+        <div class="repo-card">
+          <h3>Retail IT Monitoring</h3>
+          <p>Dashboard project to monitor connectivity and device status across retail outlets.</p>
         </div>
-
-        <div class="section-title">Technical skills</div>
-        <ul class="list">
-          <li>Cisco routers & switches (2900, 1921, 800, 4321, 4331, C1111)</li>
-          <li>Cisco switches (2960, 3650, 3750, 4500) and Juniper</li>
-          <li>Cisco Aironet APs; Cisco 8840/5508 WLC</li>
-          <li>Routing, VLANs, ACLs, IOS upgrades, firewall basics</li>
-          <li>PDA, POS, HHT, RFID device installations for retail</li>
-        </ul>
-
-        <div class="section-title">Soft skills</div>
-        <div class="skills-grid" style="margin-top:8px">
-          <div class="skill">Communication</div>
-          <div class="skill">Problem Solving</div>
-          <div class="skill">Teamwork</div>
-          <div class="skill">Leadership</div>
-          <div class="skill">Time Management</div>
-          <div class="skill">Adaptability</div>
-          <div class="skill">Conflict Resolution</div>
-          <div class="skill">Decision Making</div>
+        <div class="repo-card">
+          <h3>CCNA Practice Labs</h3>
+          <p>Collection of Packet Tracer and GNS3 lab files used for CCNA preparation.</p>
         </div>
-      </aside>
+      </div>
+    </section>
 
-      <main class="main">
-        <div class="headline">
-          <div>
-            <div class="section-title">Professional summary</div>
-            <p class="summary">
-              To work in a creative and challenging environment where I can constantly learn and successfully deliver exact solutions to the problems.
-            </p>
-          </div>
-          <div style="text-align:right;color:var(--muted);font-size:13px">
-            <strong>Experience</strong><br />
-            Senior IT Engineer — Retail IT Operations
-          </div>
-        </div>
+    <section class="section experience">
+      <h2>Experience</h2>
+      <div class="repo-card">
+        <h3>Senior IT Engineer — Reliance Retail</h3>
+        <p>Responsible for managing routers, switches, and wireless infrastructure across Kerala retail outlets. Provided end-to-end networking support and device configurations.</p>
+      </div>
+      <div class="repo-card" style="margin-top:16px;">
+        <h3>Junior System Administrator — Tech27 Systems Pvt Ltd</h3>
+        <p>Handled system administration, server maintenance, and troubleshooting network issues.</p>
+      </div>
+    </section>
 
-        <section aria-labelledby="work" style="margin-top:12px">
-          <h2 id="work" class="section-title">Work experience</h2>
-
-          <article class="job" aria-labelledby="job1">
-            <h3 id="job1">Senior IT Engineer — Retail IT Operations</h3>
-            <div class="meta">Reliance Retail</div>
-            <ul>
-              <li>Networking support to all Reliance businesses across Kerala sites.</li>
-              <li>Installation, configuration and troubleshooting of Cisco routers: 2900, 1921, 800, 4321, 4331, C1111.</li>
-              <li>Installation, configuration and troubleshooting of Cisco switches (2960, 3650, 3750, 4500) and Juniper devices.</li>
-              <li>Implemented wireless architectures — Cisco Aironet 1600/1700/3600 APs and Cisco 8840/5508 WLC controllers.</li>
-              <li>Router, switch, modem, WAP configurations and IOS upgrades for routers, switches and firewall.</li>
-              <li>Booking dockets for lease lines with service providers.</li>
-              <li>Configured access lists, static routes, VLANs and static/default routing on core routers.</li>
-              <li>Installation and configuration of PDA, POS, HHT and RFID devices for retail operations.</li>
-            </ul>
-          </article>
-
-          <article class="job" aria-labelledby="job2">
-            <h3 id="job2">Junior System Administrator</h3>
-            <div class="meta">Tech27 Systems Pvt Ltd</div>
-            <ul>
-              <li>Handled system administration tasks and hardware troubleshooting.</li>
-              <li>Maintained servers, desktops and handled routine maintenance and problem resolution.</li>
-              <!-- Original PDF content here had limited details; include additional specifics as needed. -->
-            </ul>
-          </article>
-        </section>
-
-        <section aria-labelledby="edu" style="margin-top:12px">
-          <h2 id="edu" class="section-title">Education</h2>
-          <ul class="list">
-            <li>Pursuing Diploma in Hardware and Networking (CCNA, MCSA, Networking, Hardware)</li>
-            <li>B.E. in Electronics and Communication — Dr. Pauls Engineering College (Anna University), April 2014</li>
-          </ul>
-        </section>
-
-        <section aria-labelledby="notes" style="margin-top:12px">
-          <h2 id="notes" class="section-title">Notes</h2>
-          <p style="color:var(--muted);font-size:14px;line-height:1.5">
-          </p>
-        </section>
-
-        <footer>
-          Last updated: <time datetime="2025-10-05">October 5, 2025</time>
-        </footer>
-      </main>
-    </div>
+    <section class="section education">
+      <h2>Education</h2>
+      <ul>
+        <li>🎓 B.E. in Electronics & Communication — Dr. Pauls Engineering College, 2014</li>
+        <li>📘 Diploma in Hardware & Networking (CCNA, MCSA, Networking, Hardware)</li>
+      </ul>
+    </section>
   </div>
 </body>
 </html>
